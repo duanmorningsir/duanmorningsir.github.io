@@ -1,4 +1,4 @@
 @echo off
 git add .
-git commit -m "更新博客"
+git commit -m "update blog"
 git push
