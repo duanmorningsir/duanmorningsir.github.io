@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/11/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>博客配置</title>
+    <url>/2024/11/28/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h2 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h2><p>在博客文件夹中右键打开终端，输入<strong>命令</strong><code>hugo new content post/[博客标题]/index.md</code>，<strong>例子</strong>：<code>hugo new content post/写了下载漫画的油猴脚本/index.md</code>，打开<code>index.md</code>文档，快乐地写作吧</p>
+<h2 id="本地博客一键上传到github"><a href="#本地博客一键上传到github" class="headerlink" title="本地博客一键上传到github"></a>本地博客一键上传到github</h2><blockquote>
+<p>需要注意的是，需要先在本地<code>hugo配置文件</code>同文件夹处运行<code>hugo server -D</code>，这样博客更改才会同步到<code>public文件夹</code>，上传的才是更新后的文件。</p>
+</blockquote>
+<p>在public的文件夹里新建一个bat脚本方便一键上传到github</p>
+<p>脚本文件内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;update blog&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置博客"><a href="#配置博客" class="headerlink" title="配置博客"></a>配置博客</h2><blockquote>
+<p>官方docs：<a href="https://stack.jimmycai.com/config/">https://stack.jimmycai.com/config/</a></p>
+</blockquote>
+<p>新建的博客<code>index.md</code>包含了博客的内容，该文件标头<code>markdown</code>格式如下，包含了<code>date日期</code>、<code>draft</code>、<code>title标题</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+++</span><br><span class="line">date = &#x27;2024-10-28T22:48:31+08:00&#x27;</span><br><span class="line">draft = true</span><br><span class="line">title = &#x27;测试&#x27;</span><br><span class="line">+++</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="标签设置"><a href="#标签设置" class="headerlink" title="标签设置"></a>标签设置</h3><p>在<code>index.md</code>博客文件的标头处新增categories &#x3D; ‘测试’，</p>
+<p><strong>多标签设置：</strong>categories写成<code>列表</code>，例子：categories &#x3D; [‘标签一’,’标签二’]</p>
+<h3 id="B站简码"><a href="#B站简码" class="headerlink" title="B站简码"></a>B站简码</h3><p>&lt; bilibili BV1fhDhYSEGE 1 &gt;</p>
+<p>显示效果：</p>
+<p><img src="/image-20241129000033957.png" alt="image-20241129000033957"></p>
+]]></content>
+      <tags>
+        <tag>博客配置</tag>
+        <tag>hugo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客-基于hugo模板</title>
+    <url>/2024/10/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>昨天花了很长的时间去搜索加去官网找hugo主题配置教程，还是有很多bug</p>
+<p>今天在B站刚好搜到一个配置视频，照着专门的主题改，顺利配置好了，第一篇博客诞生！</p>
+<h4 id="创建新博客的命令"><a href="#创建新博客的命令" class="headerlink" title="创建新博客的命令"></a>创建新博客的命令</h4><ol>
+<li>在博客所有文件存放的文件夹处右键进入<strong>终端</strong></li>
+<li>输入命令<code>hugo new content post/&lt;新博客名称&gt;/index.md</code>，显示<code>created</code>即成功</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PS D:\Documents\AAAA代码\myblog&gt; hugo new content post/机器学习测试题/index.md</span><br><span class="line">Content &quot;D:\\Documents\\AAAA代码\\myblog\\content\\post\\机器学习测试题\\index.md&quot; created</span><br></pre></td></tr></table></figure>
+
+<h4 id="文档撰写规范"><a href="#文档撰写规范" class="headerlink" title="文档撰写规范"></a>文档撰写规范</h4><p>必须遵循一定的格式规范，markdown文件才能被渲染为html并顺利展示在网页上</p>
+<h5 id="页眉"><a href="#页眉" class="headerlink" title="页眉"></a>页眉</h5><p>在文档的最开始处，应该写为如下样式，其中<code>+++</code>表示分隔行，<code>date</code>、<code>draft</code>、<code>title</code>是默认生成的，<code>description</code>是副标题，<code>categories</code>是文档的分类。目前还只会划分为一类，再多不知道怎么写了，总是报错。</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">+++</span><br><span class="line">date = &#x27;2024-11-02T23:08:36+08:00&#x27;</span><br><span class="line">draft = true</span><br><span class="line">title = &#x27;机器学习测试题&#x27;</span><br><span class="line"></span><br><span class="line">description = &#x27;UESTC机器学习研讨题目&#x27;</span><br><span class="line">categories = &#x27;机器学习&#x27;</span><br><span class="line"></span><br><span class="line">+++</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>hugo</tag>
+      </tags>
+  </entry>
+</search>
