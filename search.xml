@@ -69,8 +69,8 @@
       </tags>
   </entry>
   <entry>
-    <title>记录2</title>
-    <url>/2024/12/03/%E8%AE%B0%E5%BD%952/</url>
+    <title>数据库作业记录2</title>
+    <url>/2024/12/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BD%9C%E4%B8%9A%E8%AE%B0%E5%BD%952/</url>
     <content><![CDATA[<h1 id="xampp安装与启动"><a href="#xampp安装与启动" class="headerlink" title="xampp安装与启动"></a>xampp安装与启动</h1><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>下载：<a href="https://www.apachefriends.org/">https://www.apachefriends.org/</a></p>
 <p>安装教程：【小白必看的php入门教程，第二节课，软件xampp的安装与使用】<a href="https://www.bilibili.com/video/BV1e7411u7qY?vd_source=8c8fc2009f4a41d7a064a07f284a69af">https://www.bilibili.com/video/BV1e7411u7qY?vd_source=8c8fc2009f4a41d7a064a07f284a69af</a></p>
 <h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><ul>
@@ -89,7 +89,7 @@
 <li>点phpmyadmin进入</li>
 </ul>
 <h2 id="ER图设计"><a href="#ER图设计" class="headerlink" title="ER图设计"></a>ER图设计</h2><p>参考教程：<a href="https://blog.csdn.net/wct040923/article/details/130656641">https://blog.csdn.net/wct040923/article/details/130656641</a></p>
-<img src="https://i-blog.csdnimg.cn/blog_migrate/6704a2a13675b6b7a452c045f42d1a65.png" alt="img" style="zoom:50%;" />
+<img src="https://s2.loli.net/2024/12/03/aXU6i7lL3NTh5bs.png" alt="img" style="zoom:50%;" />
 
 <p>具体设计的文件在桌面，是依据聊天记录拍的图片</p>
 <img src="https://s2.loli.net/2024/12/03/Cw7copS6ZlQbDMx.jpg" alt="694795f7f3e8b0b9b7d8e3df158752ff" style="zoom:25%;" />
@@ -97,11 +97,11 @@
 <h2 id="实体关系表设计（MySQL中的SQL表创建）"><a href="#实体关系表设计（MySQL中的SQL表创建）" class="headerlink" title="实体关系表设计（MySQL中的SQL表创建）"></a>实体关系表设计（<strong>MySQL中的SQL表创建</strong>）</h2><ul>
 <li>同一个成员在不同乐队中使用的乐器、税率都可能不同，因此写在关系表</li>
 </ul>
-<p><img src="/image-20241202232557853.png" alt="image-20241202232557853"></p>
+<p><img src="https://s2.loli.net/2024/12/03/GbFQON3ftliCyBs.png" alt="image-20241202232557853"></p>
 <ul>
 <li>event存在venue_id和event_date都相同的情况，生成 EventPerformances表时需要注意</li>
 </ul>
-<p><img src="/image-20241203002327148.png" alt="image-20241203002327148"></p>
+<p><img src="https://s2.loli.net/2024/12/03/ZXNnRd6J8VMUp9t.png" alt="image-20241203002327148"></p>
 <h3 id="列名"><a href="#列名" class="headerlink" title="列名"></a>列名</h3><blockquote>
 <p>Musician ID, Musician Name, Birthday, Instrument, Experience, Royalty Rate,<br>Band Name, Genre, Formation Year, Manager Phone, Manager Email,<br>Venue, Event Date, Theme, Audience Size, Merchandise Sales, Ticket Revenue, Headliner</p>
 </blockquote>
